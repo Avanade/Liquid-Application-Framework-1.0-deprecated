@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.Base", "src\Liquid.Base\Liquid.Base.csproj", "{C53B53BE-BA7D-4C74-B49F-23894B6AA5A6}"
 EndProject
@@ -49,9 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.Domain.Tests", "test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.Tests", "test\Liquid.Tests\Liquid.Tests.csproj", "{6BA7DC4B-0F66-415A-AE74-5DEA5D3943D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.OnAzure.Tests", "test\Liquid.OnAzure.Tests\Liquid.OnAzure.Tests.csproj", "{9DEA4109-7542-40D5-9CCF-A673C9787E6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.OnAzure.IntegrationTests", "test\Liquid.OnAzure.Tests\Liquid.OnAzure.IntegrationTests.csproj", "{9DEA4109-7542-40D5-9CCF-A673C9787E6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Runtime.Tests", "test\Liquid.Runtime.Tests\Liquid.Runtime.Tests.csproj", "{83C12AC3-1AE7-4297-B414-347790EF32A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liquid.Runtime.Tests", "test\Liquid.Runtime.Tests\Liquid.Runtime.Tests.csproj", "{83C12AC3-1AE7-4297-B414-347790EF32A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnAzure.IntegrationTests", "OnAzure.IntegrationTests", "{C8A918D5-2B9D-4A57-8902-FA92F0C7193B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,8 +144,9 @@ Global
 		{5279F425-0A2C-4889-968D-FFEB25975453} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
 		{90CF0830-CD3C-4DD7-8C90-584772885BE0} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
 		{6BA7DC4B-0F66-415A-AE74-5DEA5D3943D5} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
-		{9DEA4109-7542-40D5-9CCF-A673C9787E6D} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
+		{9DEA4109-7542-40D5-9CCF-A673C9787E6D} = {C8A918D5-2B9D-4A57-8902-FA92F0C7193B}
 		{83C12AC3-1AE7-4297-B414-347790EF32A3} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
+		{C8A918D5-2B9D-4A57-8902-FA92F0C7193B} = {6A0B6B3D-15FE-4C0B-97A1-7897E31C0C4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E0953B7-A30F-4440-9719-22CA017677B5}

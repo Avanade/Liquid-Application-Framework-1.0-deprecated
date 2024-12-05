@@ -28,6 +28,11 @@ namespace Liquid.OnAzure
             ProcessSubscription();
         }
 
+        public void ProcessSubscriptione()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Implementation of connection service bus
         /// </summary>
@@ -90,7 +95,12 @@ namespace Liquid.OnAzure
                             try
                             {
                                 InvokeProcess(method, message.Body);
-                                await queueReceiver.CompleteAsync(message.SystemProperties.LockToken);
+
+                                if (queueReceiver.ReceiveMode == ReceiveMode.PeekLock) 
+                                {
+                                    await queueReceiver.CompleteAsync(message.SystemProperties.LockToken);
+                                }
+                                    
                             }
                             catch (Exception exRegister)
                             {
